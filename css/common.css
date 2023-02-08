@@ -3,6 +3,7 @@
 body {
     height: 100vh;
     font-family: 'Gothic A1', sans-serif;
+    color: #fff;
 }
 
 .wrapper {
@@ -12,3 +13,33 @@ body {
 .main-container {
     width: calc(100% - 50px);
 }
+
+.btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 15px 40px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 
+-----------------
+Media Queries
+-----------------
+*/
+
+@media screen and (min-width: 576px) {
+    .main-container {
+        width: calc(100% - 230px);
+    }
+}
+

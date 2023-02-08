@@ -3,3 +3,15 @@
 .flex {
     display: flex;
 }
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.dir-col {
+    flex-direction: column;
+}
