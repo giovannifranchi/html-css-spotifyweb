@@ -1,0 +1,6 @@
+/* Footer */
+
+footer {
+    height: 100px;
+    background-color: var(--footer-background);
+}

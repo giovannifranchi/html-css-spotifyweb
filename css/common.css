@@ -1,0 +1,14 @@
+/* Common */
+
+body {
+    height: 100vh;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.wrapper {
+    height: calc(100% - 100px);
+}
+
+.main-container {
+    width: calc(100% - 50px);
+}
