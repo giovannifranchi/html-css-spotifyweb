@@ -8,7 +8,7 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
     <!-- /Google Font -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,29 +22,35 @@
         <aside class="flex dir-col">
             <!-- Logo -->
             <div class="logo">
-                <img src="" alt="logo-small" class="logo-small">
-                <img src="" alt="logo-big" class="logo-big">
+                <img src="img/logo-small.svg" alt="logo-small" class="logo-small">
+                <img src="img/logo.svg" alt="logo-big" class="logo-big">
             </div>
             <!-- /Logo -->
             <!-- Icons -->
             <ul class="icons">
                 <li class="icon-li">
-                    <a href="#">
-                        <span class="icon">i</span>
-                        <span class="text">text</span>
-                    </a>
+                    <div class="icon-container">
+                        <a href="#">
+                            <img src="img/home.svg" alt="home" class="icon">
+                            <span class="text">Home</span>
+                        </a>
+                    </div>
                 </li>
                 <li class="icon-li">
-                    <a href="#">
-                        <span class="icon">i</span>
-                        <span class="text">text</span>
-                    </a>
+                    <div class="icon-container">
+                        <a href="#">
+                            <img src="img/search.svg" alt="search" class="icon">
+                            <span class="text">Cerca</span>
+                        </a>
+                    </div>
                 </li>
                 <li class="icon-li">
-                    <a href="#">
-                        <span class="icon">i</span>
-                        <span class="text">text</span>
-                    </a>
+                    <div class="icon-container">
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="library" class="icon">
+                            <span class="text">La tua libreria</span>
+                        </a>
+                    </div>
                 </li>
             </ul>
             <!-- /Icons -->
@@ -52,8 +58,10 @@
             <div class="playlist flex dir-col">
                 <h3 class="playlist-title">Playlist</h3>
                 <div class="playlist-add">
-                    <span class="add-icon">add i</span>
-                    <span class="add-text">add text</span>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <span class="add-text">Crea Playlist</span>
                 </div>
                 <ul class="playlist-list">
                     <li class="playlist-item">
@@ -84,13 +92,17 @@
             <div class="user">
                 <div class="install">
                     <a href="#">
-                        <span class="install icon">install i</span>
-                        <span class="install text">install text</span>
+                        <span class="install icon">
+                            <i class="fa-regular fa-circle-down" id="circle-down"></i>
+                        </span>
+                        <span class="install text">Installa App</span>
                     </a>
                 </div>
-                <div class="user-data">
-                    <img src="" alt="user-image" class="user-img">
-                    <span class="user text">John Doe</span>
+                <div class="user-data flex">
+                    <div class="user-data icon">
+                        <img src="img/profile.svg" alt="user-image" class="user-img">
+                    </div>
+                    <span class="user-name text">John Doe</span>
                 </div>
             </div>
             <!-- /User -->

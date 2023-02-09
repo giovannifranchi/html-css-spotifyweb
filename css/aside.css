@@ -4,21 +4,60 @@ aside {
     background-color: var(--black);
     width: var(--aside-width-s);
     overflow-y: hidden;
+    align-items: center;
+    padding: 10px 0;
+}
+
+aside .logo-small {
+    width: 30px;
+    margin-bottom: 10px;
 }
 
 aside .logo-big {
     display: none;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+aside .icon {
+    width: 25px;
+    vertical-align: middle;
+}
+
+aside .icon-li .icon {
+    margin-bottom: 10px;
 }
 
 aside .text {
     display: none;
+    vertical-align: middle;
 }
 
 aside .playlist {
     display: none;
     flex-grow: 1;
     overflow-y: hidden;
-    min-height: 250px;
+    margin-top: 20px;
+}
+
+aside .playlist .playlist-add {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+aside .playlist .playlist-add .add-icon {
+    background-color: grey;
+    color: #000;
+    padding: 8px 10px;
+}
+
+aside .playlist .playlist-add .add-icon i {
+    font-size: 30px;
+}
+
+aside .playlist .playlist-add .add-text {
+    padding-left: 10px;
 }
 
 aside .playlist .playlist-list {
@@ -26,9 +65,45 @@ aside .playlist .playlist-list {
     overflow-y: auto;
 }
 
+aside .playlist .playlist-list > * {
+    margin-top: 15px;
+    opacity: 0.7;
+}
+
+aside .playlist .playlist-list > *:hover {
+    opacity: 1;
+}
+
 aside .user {
     margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+aside .install {
+    padding: 10px 2px;
+    font-size: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+aside .user-data {
+    align-items: center;
+    padding-top: 10px;
+}
+
+aside .user-data.icon {
+    background-color: grey;
+    padding: 0 3px;
+    border-radius: 50%;
+} 
+
+aside .user-name {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+
 
 
 
@@ -44,6 +119,31 @@ Media Queries
 @media screen and (min-width: 576px) {
     aside {
         width: var(--aside-width-b);
+        align-items: stretch;
+    }
+
+    aside .text:not(.user-name) {
+        opacity: 0.7;
+    }
+
+    aside > :not(:nth-child(2)) {
+        padding: 0 var(--aside-elemens-padding);
+    }
+
+    aside .icon-container {
+        padding: 0 18px;
+    }
+
+    aside .icon-li {
+        border-left: 2px solid transparent;
+    }
+
+    aside .icon-li:hover {
+        border-left: 2px solid var(--aside-hover-border);
+    }
+
+    aside .icon-li:hover .text {
+        opacity: 1;
     }
 
     aside .logo-small {
@@ -60,5 +160,9 @@ Media Queries
     
     aside .playlist{
         display: flex;
+    }
+
+    aside .user {
+        align-items: stretch;
     }
 }

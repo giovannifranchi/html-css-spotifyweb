@@ -2,8 +2,10 @@
     --black: #000;
     --footer-background: #282828;
     --main-background: #141922;
+    --aside-hover-border: #adff2f;
     --header-background: rgb(8, 11, 18, 0.9);
     --footer-heigth: 90px;
     --aside-width-s: 50px;
     --aside-width-b: 230px;
+    --aside-elemens-padding: 20px;
 }
