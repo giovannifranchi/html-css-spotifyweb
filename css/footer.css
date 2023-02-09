@@ -4,3 +4,11 @@ footer {
     height: var(--footer-heigth);
     background-color: var(--footer-background);
 }
+
+footer .left-area, .right-area {
+    flex-basis: 20%;
+}
+
+footer .mid-area {
+    flex-grow: 1;
+}
