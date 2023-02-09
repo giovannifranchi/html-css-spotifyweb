@@ -5,6 +5,19 @@ aside {
     width: var(--aside-width-s);
 }
 
+aside .text {
+    display: none;
+}
+
+aside .playlist {
+    display: none;
+}
+
+aside .user {
+    margin-top: auto;
+}
+
+
 
 
 
@@ -18,5 +31,13 @@ Media Queries
 @media screen and (min-width: 576px) {
     aside {
         width: var(--aside-width-b);
+    }
+
+    aside .text {
+        display: initial;
+    }
+    
+    aside .playlist{
+        display: initial;
     }
 }
