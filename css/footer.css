@@ -3,12 +3,64 @@
 footer {
     height: var(--footer-heigth);
     background-color: var(--footer-background);
+    padding: 0 10px;
+    overflow: hidden;
 }
 
-footer .left-area, .right-area {
-    flex-basis: 20%;
+footer .left-area {
+    width: 30%;
 }
 
-footer .mid-area {
-    flex-grow: 1;
+/* footer .right-area {
+} */
+
+footer .left-area > * {
+    width: calc(100% / 3);
+    margin: 0 10px;
+}
+
+footer .left-area .img-container {
+    width: 20%;
+}
+
+footer .mid-area .buttons-container {
+    padding: 10px 0;
+}
+
+footer .icon-container {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+footer .icon-container.big i {
+    font-size: 30px;
+}
+
+/* footer .mid-area .time-container .time {
+
+} */
+
+footer .time-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+footer .bar {
+    width: 200px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: grey;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 640px) {
+    footer .left-area .icon-container {
+        flex-direction: row;
+    }
 }
