@@ -5,6 +5,19 @@ body {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.img-fluid {
+    width: 100%;
+    object-fit: cover;
+}
 
 .btn {
     background-color: transparent;

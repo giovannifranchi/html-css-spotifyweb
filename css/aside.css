@@ -3,6 +3,11 @@
 aside {
     background-color: var(--black);
     width: var(--aside-width-s);
+    overflow-y: hidden;
+}
+
+aside .logo-big {
+    display: none;
 }
 
 aside .text {
@@ -11,6 +16,14 @@ aside .text {
 
 aside .playlist {
     display: none;
+    flex-grow: 1;
+    overflow-y: hidden;
+    min-height: 250px;
+}
+
+aside .playlist .playlist-list {
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 aside .user {
@@ -33,11 +46,19 @@ Media Queries
         width: var(--aside-width-b);
     }
 
+    aside .logo-small {
+        display: none;
+    }
+
+    aside .logo-big {
+        display: initial;
+    }
+
     aside .text {
         display: initial;
     }
     
     aside .playlist{
-        display: initial;
+        display: flex;
     }
 }
