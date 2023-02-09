@@ -6,6 +6,7 @@ Main Container
     width: calc(100% - var(--aside-width-s));
     background-color: var(--main-background);
     overflow-y: auto;
+    padding-top: 100px;
 }
 
 
