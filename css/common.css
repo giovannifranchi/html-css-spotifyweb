@@ -2,17 +2,8 @@
 
 body {
     height: 100vh;
-    font-family: 'Gothic A1', sans-serif;
-    color: #fff;
 }
 
-.wrapper {
-    height: calc(100% - 100px);
-}
-
-.main-container {
-    width: calc(100% - 50px);
-}
 
 .btn {
     background-color: transparent;
@@ -22,24 +13,6 @@ body {
     padding: 15px 40px;
 }
 
-li {
-    list-style-type: none;
-}
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
-/* 
------------------
-Media Queries
------------------
-*/
-
-@media screen and (min-width: 576px) {
-    .main-container {
-        width: calc(100% - 230px);
-    }
-}
 

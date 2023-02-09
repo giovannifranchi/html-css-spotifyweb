@@ -1,0 +1,25 @@
+/* 
+Main Container
+*/
+
+#main-container {
+    width: calc(100% - var(--aside-width-s));
+    background-color: var(--main-background);
+}
+
+
+
+
+
+
+/* 
+-----------------
+Maedia Queries
+-----------------
+*/
+
+@media screen and (min-width: 576px) {
+    #main-container {
+        width: calc(100% - var(--aside-width-b));
+    }
+}

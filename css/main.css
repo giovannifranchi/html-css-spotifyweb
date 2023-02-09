@@ -1,7 +1,6 @@
 /* Main */
 
+
 main {
-    background-color: var(--main-background);
-    width: 100%;
-    height: 100%;
+    height: calc(100% - var(--footer-heigth));
 }
