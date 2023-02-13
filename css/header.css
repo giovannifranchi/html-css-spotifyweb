@@ -5,8 +5,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 90px;
-    left: 50px;
+    height: 5.625rem;
+    left: 3.125rem;
     right: 0;
     top: 0;
     background-color: var(--header-background);
@@ -18,6 +18,6 @@ header {
 
 @media screen and (min-width:552px) {
     header {
-        left: 230px;
+        left: 14.375rem;
     }
 }

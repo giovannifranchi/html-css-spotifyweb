@@ -21,35 +21,35 @@ Main Container
 }
 
 #main-container .highlight-list .highlight-item {
-    font-size: 16px;
-    padding: 20px 5px;
+    font-size: 1rem;
+    padding: 1.25rem 0.3125rem;
     opacity: 0.7;
 }
 
 #main-container .songs-container {
     max-width: 90%;
-    margin: 20px auto;
+    margin: 1.25rem auto;
 }
 
 #main-container .songs-container > h2 {
-    margin: 30px 0 20px 0;
+    margin: 1.875rem 0 1.25rem 0;
 }
 
 
 #main-container .row {
-    margin-top: 30px;
-    gap: 20px 10px;
+    margin-top: 1.875rem;
+    gap: 1.25rem 0.625rem;
     flex-wrap: wrap;
     overflow-y: auto;
 }
 
 #main-container .col {
-    width: calc(100% / 2 - 10px);
+    width: calc(100% / 2 - 0.625rem);
     text-align: center;
 }
 
 #main-container .col h3 {
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 
@@ -93,7 +93,7 @@ Main Container
 }
 
 #main-container .play-hover-overlay i {
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 
@@ -122,7 +122,7 @@ Maedia Queries
 
 @media screen and (min-width: 640px) {
     #main-container .col {
-        width: calc(100% / 4 - 10px);
+        width: calc(100% / 4 - 0.625rem);
     }
 }
 
@@ -130,6 +130,6 @@ Maedia Queries
 
 @media screen and (min-width: 878px) {
     #main-container .col {
-        width: calc(100% / 6 - 10px);
+        width: calc(100% / 6 - 0.625rem);
     }
 }

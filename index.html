@@ -112,14 +112,14 @@
         <div id="main-container">
             <!-- Header -->
             <header>
-                <button class="btn">EFFETTUA L'UPGRADE</button>
+                <button class="btn expand">EFFETTUA L'UPGRADE</button>
             </header>
             <!-- /Header -->
             <!-- Highlight Container -->
             <div class="highlight-container">
                 <!-- Highlight List -->
                 <ul class="highlight-list flex">
-                    <li class="highlight-item">
+                    <li class="highlight-item highlited">
                         <a href="#">
                             IN EVIDENZA
                         </a>
@@ -285,13 +285,13 @@
             </div>
             <div class="text-container">
                 <h3 class="song-title">Sinister</h3>
-                <span class="song-subtitle">Brano Norma</span>
+                <span class="song-subtitle hover underline">Brano Norma</span>
             </div>
-            <div class="icon-container-footer flex dir-col">
-                <span class="icon">
+            <div class="icon-container-footer">
+                <span class="icon hover">
                     <i class="fa-regular fa-heart"></i>
                 </span>
-                <span class="icon">
+                <span class="icon hover">
                     <i class="fa-regular fa-folder"></i>
                 </span>
             </div>
@@ -301,32 +301,34 @@
         <div class="mid-area flex dir-col align-center justify-center">
             <div class="buttons-container flex">
                 <div class="icon-container">
-                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-shuffle hover"></i>
                 </div>
                 <div class="icon-container">
-                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-backward-step hover"></i>
                 </div>
                 <div class="icon-container big">
-                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-circle-play hover"></i>
                 </div>
                 <div class="icon-container">
-                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-forward-step hover"></i>
                 </div>
                 <div class="icon-container">
-                    <i class="fa-solid fa-rotate-right"></i>
+                    <i class="fa-solid fa-rotate-right hover"></i>
                 </div>
             </div>
             <div class="time-bar-container flex">
                 <span class="time start">0:25</span>
                 <div class="time bar">
-                    
+                    <div class="bar-overlay">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
                 </div>
                 <span class="time end">4:35</span>
             </div>
         </div>
         <!-- /Mid Area -->
         <!-- Right Area -->
-        <div class="right-area flex align-center">
+        <div class="right-area flex align-center justify-end">
             <div class="icon-container">
                 <i class="fa-solid fa-list"></i>
             </div>
@@ -337,6 +339,9 @@
                 <i class="fa-solid fa-volume-high"></i>
             </div>
             <div class="audio bar">
+                <div class="bar-overlay">
+                    <i class="fa-solid fa-circle"></i>
+                </div>
             </div>
         </div>
         <!-- Right Area -->

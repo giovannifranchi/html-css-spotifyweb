@@ -3,54 +3,117 @@
 footer {
     height: var(--footer-heigth);
     background-color: var(--footer-background);
-    padding: 0 10px;
+    padding: 0 0.625rem;
     overflow: hidden;
 }
 
-footer .left-area {
-    width: 30%;
+footer .left-area, .right-area {
+   flex-grow: 1;
 }
 
-/* footer .right-area {
-} */
+footer .left-area {
+    gap: 10px;
+}
 
-footer .left-area > * {
-    width: calc(100% / 3);
-    margin: 0 10px;
+footer .mid-area {
+    flex-grow: 2;
 }
 
 footer .left-area .img-container {
-    width: 20%;
+    width: 1.875rem;
+}
+
+footer .left-area .icon-container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .mid-area .buttons-container {
-    padding: 10px 0;
+    padding: 0.625rem 0;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
 }
 
 footer .icon-container {
-    padding: 0 15px;
+    width: calc(100% / 6 - 0.625rem);
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+
+footer .icon-container i {
+    font-size: 1em;
 }
 
 footer .icon-container.big i {
-    font-size: 30px;
+    font-size: 2em;
 }
 
-/* footer .mid-area .time-container .time {
-
-} */
 
 footer .time-bar-container {
+    width: 80%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
+footer .time {
+    width: calc(20% - .625rem);
+    text-align: center;
+}
+
+footer .bar-overlay {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer .bar-overlay i {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+footer .bar-overlay:hover {
+    background-color: var(--aside-hover-border);
+}
+
+footer .bar-overlay:hover i {
+    display: initial;
+}
+
+
 footer .bar {
-    width: 200px;
+    width: 80%;
     height: 10px;
     border-radius: 30px;
     background-color: grey;
+}
+
+footer .audio.bar{
+    width: 30%;
+    
+}
+
+footer .right-area {
+    gap: 10px;
+}
+
+
+footer .right-area .icon-container{
+    width: calc(10% - 0.3125rem);
+    padding: 5px;
 }
 
 
@@ -60,7 +123,8 @@ footer .bar {
 /* Media Queries */
 
 @media screen and (min-width: 640px) {
-    footer .left-area .icon-container {
+    footer .left-area .icon-container-footer {
         flex-direction: row;
+        gap: 10px;
     }
 }

@@ -5,27 +5,27 @@ aside {
     width: var(--aside-width-s);
     overflow-y: hidden;
     align-items: center;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 aside .logo-small {
     width: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 aside .logo-big {
     display: none;
-    width: 150px;
-    margin-bottom: 30px;
+    width: 9.375rem;
+    margin-bottom: 1.875rem;
 }
 
 aside .icon {
-    width: 25px;
+    width: 1.5625rem;
     vertical-align: middle;
 }
 
 aside .icon-li .icon {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 aside .text {
@@ -37,11 +37,11 @@ aside .playlist {
     display: none;
     flex-grow: 1;
     overflow-y: hidden;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 aside .playlist .playlist-add {
-    margin: 15px 0;
+    margin: 0.9375rem 0;
     display: flex;
     align-items: center;
 }
@@ -49,7 +49,7 @@ aside .playlist .playlist-add {
 aside .playlist .playlist-add .add-icon {
     background-color: grey;
     color: #000;
-    padding: 8px 10px;
+    padding: 0.5rem 0.625rem;
 }
 
 aside .playlist .playlist-add .add-icon i {
@@ -57,7 +57,7 @@ aside .playlist .playlist-add .add-icon i {
 }
 
 aside .playlist .playlist-add .add-text {
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
 
 aside .playlist .playlist-list {
@@ -66,7 +66,7 @@ aside .playlist .playlist-list {
 }
 
 aside .playlist .playlist-list > * {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     opacity: 0.7;
 }
 
@@ -82,25 +82,25 @@ aside .user {
 }
 
 aside .install {
-    padding: 10px 2px;
-    font-size: 10px;
+    padding: 0.625rem 0.125rem;
+    font-size: 0.625rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 aside .user-data {
     align-items: center;
-    padding-top: 10px;
+    padding-top: 0.625rem;
 }
 
 aside .user-data.icon {
     background-color: grey;
-    padding: 0 3px;
+    padding: 0 0.1875rem;
     border-radius: 50%;
 } 
 
 aside .user-name {
     font-weight: bold;
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
 
 
@@ -131,15 +131,15 @@ Media Queries
     }
 
     aside .icon-container {
-        padding: 0 18px;
+        padding: 0 1.125rem;
     }
 
     aside .icon-li {
-        border-left: 2px solid transparent;
+        border-left: 0.125rem solid transparent;
     }
 
     aside .icon-li:hover {
-        border-left: 2px solid var(--aside-hover-border);
+        border-left: 0.125rem solid var(--aside-hover-border);
     }
 
     aside .icon-li:hover .text {
