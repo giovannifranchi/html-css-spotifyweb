@@ -16,7 +16,7 @@ footer .left-area {
 }
 
 footer .mid-area {
-    flex-grow: 2;
+    width: 50%;
 }
 
 footer .left-area .img-container {
@@ -96,7 +96,7 @@ footer .bar-overlay:hover i {
 
 footer .bar {
     width: 80%;
-    height: 10px;
+    height: 0.3125rem;
     border-radius: 30px;
     background-color: grey;
 }
